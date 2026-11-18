@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Cleartext is only needed for camera web/ONVIF services on the local network, which are plain HTTP.
+     Internet traffic (tiles, Overpass) uses HTTPS. The core NetworkGuard additionally restricts
+     cleartext probes to the authorized private subnet. -->
+<network-security-config>
+    <base-config cleartextTrafficPermitted="true" />
+</network-security-config>
