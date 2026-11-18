@@ -1,0 +1,41 @@
+[
+  {
+    "id": "test-mux",
+    "title": "Player Test Stream (Mux)",
+    "location": "Test feed — confirms HLS playback works",
+    "lat": 37.7749,
+    "lon": -122.4194,
+    "feedType": "STREAM",
+    "url": "https://test-streams.mux.dev/x36xhzz/x36xhzz.m3u8",
+    "source": "https://test-streams.mux.dev"
+  },
+  {
+    "id": "test-bipbop",
+    "title": "Player Test Stream (Apple BipBop)",
+    "location": "Test feed — Apple's public HLS sample",
+    "lat": 37.3349,
+    "lon": -122.0090,
+    "feedType": "STREAM",
+    "url": "https://devstreaming-cdn.apple.com/videos/streaming/examples/img_bipbop_adv_example_fmp4/master.m3u8",
+    "source": "https://developer.apple.com/streaming"
+  },
+
+  "// ------------------------------------------------------------------",
+  "// Add real PUBLIC cameras below — feeds the operator published on",
+  "// purpose (traffic DOTs, harbors, ski resorts, city squares, etc).",
+  "// feedType STREAM for .m3u8/.mpd/rtsp URLs, IMAGE for refreshing stills.",
+  "// Set ptzBaseUrl only if the operator publicly exposes PTZ control.",
+  "// Delete these two comment strings — they are ignored by the parser.",
+  "// ------------------------------------------------------------------",
+
+  {
+    "id": "example-fill-me",
+    "title": "Example — replace me",
+    "location": "City, Country",
+    "lat": 42.6977,
+    "lon": 23.3219,
+    "feedType": "IMAGE",
+    "url": "https://example.com/public-webcam/snapshot.jpg",
+    "source": "https://example.com/our-public-webcam-page"
+  }
+]
